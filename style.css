@@ -1,0 +1,36 @@
+body {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+img {
+  margin: 0 auto;
+  width: 900px;
+  border: 1px solid #eeeded;
+}
+
+section {
+  padding: 2em;
+  max-width: 1020px;
+  border: 1px solid #eeeded;
+}
+
+section:nth-child(even) {
+  background-color: #eeeded;
+}
+
+figcaption { 
+  padding: 5px;
+  width: 900px;
+  background-color: #eeeded;
+  mix-blend-mode: multiply;
+}
+
+a {
+  margin: 0 auto;
+  padding: 5px 20px;
+  display: block;
+  width: 800px;
+  background-color: crimson;
+  color: white;
+}
