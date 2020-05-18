@@ -1,15 +1,26 @@
 body {
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+h1 {
+  text-align: center;
 }
 
 img {
   margin: 0 auto;
-  width: 900px;
+  width: 800px;
   border: 1px solid #eeeded;
+}
+header {
+  padding: 1em;
+  background-color: crimson;
+  color: white;
+  text-align: center;
+
 }
 
 section {
+  margin: 2em auto;
   padding: 2em;
   max-width: 1020px;
   border: 1px solid #eeeded;
@@ -19,9 +30,14 @@ section:nth-child(even) {
   background-color: #eeeded;
 }
 
+figure{
+  width: 800px;
+  margin: 1em auto;
+}
+
 figcaption { 
   padding: 5px;
-  width: 900px;
+  width: 800px;
   background-color: #eeeded;
   mix-blend-mode: multiply;
 }
