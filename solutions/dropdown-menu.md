@@ -10,7 +10,7 @@ sunglasses dropdown-menu
     $("[data-description='sunglasses_all']").parent().css("order", "-1");
 
     
-sunglasses dropdown-menu
+eyeglasses dropdown-menu
 
     $("[data-description='eyeglasses_men-s']").parent().css("order", "-6");
     $("[data-description='eyeglasses_women-s']").parent().css("order", "-5");
