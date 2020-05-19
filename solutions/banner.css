@@ -1,12 +1,13 @@
 .banner-take-test-wrapper {
   margin: 30px auto;
-  padding: 5px 10px;
+  padding: 8px 10px;
   
   max-width: 970px;
 
   display: flex;
   flex-direction: row wrap;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
 
   font-family: 'Oswald-Medium', HelveticaNeueBold, 'Helvetica Neue', TeXGyreHerosBold, Helvetica, Tahoma, Geneva, Arial, sans-serif;
@@ -27,11 +28,12 @@
   color: white;
 }
 
-.reset-list {
+.text-container {
   width: 600px;
   padding: 0;
   list-style: none;
 }
+
 .take-test-text{
   font-family: lato;
   color: #666;
