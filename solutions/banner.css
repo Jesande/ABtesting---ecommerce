@@ -2,10 +2,10 @@
   margin: 30px auto;
   padding: 8px 10px;
   
-  max-width: 970px;
+  width: 970px;
 
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
