@@ -28,6 +28,10 @@
   color: white;
 }
 
+.take-test-cta:hover {
+  color: white;
+}
+
 .text-container {
   width: 600px;
   padding: 0;
