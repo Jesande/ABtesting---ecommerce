@@ -1,8 +1,9 @@
-D_PDP_Prod_SizeDropdownBtn
+#D_PDP_Prod_SizeDropdownBtn
 
 //add the popup
 $('#pdp_page').prepend('<style>.wcs-quick-buy-lightbox {top: 4% !important;}</style><div class="sizeGuideOverlay"></div><style>.sizeGuideOverlay {  display:none; position: absolute;      opacity: 0.8;  width: 100vw;    height: 100vh;    background: rgba(0,0,0,0.8);    z-index: 3;</style>');
-      $('body').append(' html  '); /*html code for the popup*/
+
+$('body').append(' html  '); /*html code for the popup*/
 
 //adds a link in the drop down menu
 $('#D_PDP_Prod_SizeDropdownBtn .dd-options').append('<li><a class="dd-option" id="D-size-guide-option"><label class="dd-option-text wcs-capitalize wcs-border-top-size-guide">Size Guide</label></a></li>');
