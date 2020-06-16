@@ -4,7 +4,7 @@ var pcpSizeGuide = function(){
   this.init = function(){
   
       $('#pdp_page').prepend('<style>.wcs-quick-buy-lightbox {top: 4% !important;}</style><div class="sizeGuideOverlay"></div><style>.sizeGuideOverlay {  display:none; position: absolute;      opacity: 0.8;  width: 100vw;    height: 100vh;    background: rgba(0,0,0,0.8);    z-index: 3;</style>');
-      $('body').append('<div class="wcs-hidden wcs-quick-buy-lightbox" id="size-guide-overlay" style="padding: 30px; width:820px; left: 50%; margin-left: -410px; "><span class="wcs-close-btn"></span><h3 style="font-size: 40px"  class=wcs-sub-heading>SIZE GUIDE</h3><p>Choose the right sunglasses or eyeglasses size by simply using your credit card and a mirror.</p><p><strong>For the great majority of people</strong>, more then 90% of our customers, <strong>Standard Size is the correct one</strong>.<br>It’s very likely it’s going to be the correct size for you too.</p><p>A rule of thumb to determine the correct size for you is the following.</p><h3 style="margin-top:20px">FIND YOUR FIT:</h3><div id=SG_findYourFit class=clearfix><div id=SG_findYourFitStep1 class=ukStep_1><p class=stepNumber>1<p class=stepDesc>Take a credit card</p><img src=//assets.ray-ban.com/is/image/RayBan/Size-guide_credit-card?$jpeg-full$ alt=""><p style="font-weight:bold">This is the approximate width of a Standard Size lens.</div><div id=SG_findYourFitStep2 class=ukStep_2><p class=stepNumber>2<p class=stepDesc>Stand in front of the mirror</p><img src=//assets.ray-ban.com/is/image/RayBan/Size-guide_face?$jpeg-full$ alt=""><p style="font-weight:bold">In front of a mirror or a webcam, place one edge of the credit card at the center of your nose. Where does the other edge end?</div><div id=SG_findYourFitStep3 class=ukStep_3><p class=stepNumber>3<p class=stepDesc>What is your Ray-Ban size?</p><img src=//assets.ray-ban.com/is/image/RayBan/Size-guide_face-guide?$jpeg-full$ style="max-width: 250px;"><dl id=SG_findYourFitStepList style="margin-top:30px"><dt>A<dd>If the edge of the credit card ends at the end of the eye your fit should be Standard Size<dt>B<dd>If it extends well beyond the end of the eye you should get a Small Size<dt>C<dd>If instead the credit card does not reach the end of the eye then go for a Large Size.</dl></div></div><p style="margin-top:45px">If you would like to find out more about how to read the numbers on sunglasses and eyeglasses here’s our <a href="https://www.ray-ban.com/usa/size-guide" target="_blank" style="text-decoration:underline">full size guide</a>.</p></div>');
+      $('body').append('<div class="wcs-hidden wcs-quick-buy-lightbox" id="size-guide-overlay" style="padding: 30px; width:820px; left: 50%; margin-left: -410px; "><span class="wcs-close-btn"></span><h3 style="font-size: 40px"  class=wcs-sub-heading>SIZE GUIDE</h3> <img src="https://raw.githubusercontent.com/spd-master-web/Rain---E-commerce-design/master/img/popup-bridge-sizesA.png" alt="Ray-ban sunglasses lens diameter and bridge width" width="650px"> <p>Choose the right sunglasses or eyeglasses size by simply using your credit card and a mirror.</p> <h3 style="margin-top:20px">FIND YOUR FIT:</h3><div id=SG_findYourFit class=clearfix><div id=SG_findYourFitStep1 class=ukStep_1><p class=stepNumber>1<p class=stepDesc>Take a credit card</p><img src=//assets.ray-ban.com/is/image/RayBan/Size-guide_credit-card?$jpeg-full$ alt=""><p style="font-weight:bold">This is the approximate width of a Standard Size lens.</div><div id=SG_findYourFitStep2 class=ukStep_2><p class=stepNumber>2<p class=stepDesc>Stand in front of the mirror</p><img src=//assets.ray-ban.com/is/image/RayBan/Size-guide_face?$jpeg-full$ alt=""><p style="font-weight:bold">In front of a mirror or a webcam, place one edge of the credit card at the center of your nose. Where does the other edge end?</div><div id=SG_findYourFitStep3 class=ukStep_3><p class=stepNumber>3<p class=stepDesc>What is your Ray-Ban size?</p><img src=//assets.ray-ban.com/is/image/RayBan/Size-guide_face-guide?$jpeg-full$ style="max-width: 250px;"><dl id=SG_findYourFitStepList style="margin-top:30px"><dt>A<dd>If the edge of the credit card ends at the end of the eye your fit should be Standard Size<dt>B<dd>If it extends well beyond the end of the eye you should get a Small Size<dt>C<dd>If instead the credit card does not reach the end of the eye then go for a Large Size.</dl></div></div><p style="margin-top:45px">If you would like to find out more about how to read the numbers on sunglasses and eyeglasses here’s our <a href="https://www.ray-ban.com/usa/size-guide" target="_blank" style="text-decoration:underline">full size guide</a>.</p></div>');
   
   $('head').append('<style>.wcs-border-top-size-guide{cursor:pointer;border-top:1px solid #ccc;margin-top:5px;padding-top:8px;}</style>');		
   
@@ -21,58 +21,51 @@ var pcpSizeGuide = function(){
   $('#SG_findYourFit #SG_findYourFitStep3 dd').css({"font-family":"Helvetica", "font-weight":"bold", "margin-left": "25px"});
 
   $('#SG_findYourFit img').css({"margin":"0 auto", "display":"block"});
-
   
   self.appendButton();
                
-  };
+};
 
 this.appendButton = function(){
-    
-    if($('#D-size-guide-option').length == 0){
-      $('#D_PDP_Prod_SizeDropdownBtn .dd-options').append('<li><a class="dd-option" id="D-size-guide-option"><label class="dd-option-text wcs-capitalize wcs-border-top-size-guide">Size Guide</label></a></li>');
+  if($('#SPD-size-guide-btn').length == 0){
+    $('#D_PDP_Prod_SizeDropdownBtn .dd-options').append('<li><a class="dd-option" id="SPD-size-guide-btn"><label class="dd-option-text wcs-capitalize wcs-border-top-size-guide">Size Guide</label></a></li>');
 
-  $('#D-size-guide-option').click(function() {
-          
-            $('.sizeGuideOverlay').show();
-    
-    $('.wcs-fadeout-full-overlay').fadeIn(200, function(){
-      $(this).css('height','100%');
-    });
-    $('#size-guide-overlay').fadeIn(200, function() {
-      var top = 24;
-      $(this).css({top:top});
-      $(window).scrollTop(0);
-    });
+$('#SPD-size-guide-btn').click(function() {
         
-          $('#size-guide-overlay .wcs-close-btn').click(function() {
-
-              $('.sizeGuideOverlay').hide();
-            
-            $('#size-guide-overlay').fadeOut(200);
-
-        });	          
-
+          $('.sizeGuideOverlay').show();
+  
+  $('.wcs-fadeout-full-overlay').fadeIn(200, function(){
+    $(this).css('height','100%');
   });
-  
-  
+  $('#size-guide-overlay').fadeIn(200, function() {
+    var top = 24;
+    $(this).css({top:top});
+    $(window).scrollTop(0);
+  });
+      
+        $('#size-guide-overlay .wcs-close-btn').click(function() {
 
-    }   
+            $('.sizeGuideOverlay').hide();
+          
+          $('#size-guide-overlay').fadeOut(200);
 
-  
-               
-  };
+      });	          
+
+});
+
+
+
+  }            
+};
   
 };
 
 $(function(){
- 
-    var intervalGuide = setInterval(function()  {  
-      if($('#D_PDP_Prod_SizeDropdownBtn').length > 0){
-        window.pcpSizeGuide = new pcpSizeGuide();
-        pcpSizeGuide.init();
-        console.log("sun: PDP | add size guide link and overlay - sizeable UPCs only"); }
-        clearInterval (intervalGuide);
-      }, 500);       
-
+  var intervalGuide = setInterval(function()  {  
+    if($('#D_PDP_Prod_SizeDropdownBtn').length > 0){
+      window.pcpSizeGuide = new pcpSizeGuide();
+      pcpSizeGuide.init();
+      console.log("sun: PDP | add size guide link and overlay - sizeable UPCs only"); }
+      clearInterval (intervalGuide);
+    }, 500);       
 });
