@@ -1,5 +1,5 @@
 // select the a element and change the color
-$("[data-element-id='X_X_MainNav_Promo']").css(" padding-right", "25px");
+$("[data-element-id='X_X_MainNav_Promo']").css("padding-right", "25px");
 
 //add the red circle
 $("[data-element-id='X_X_MainNav_Promo']").parent().css("position", "relative");
