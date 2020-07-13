@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .frame-hover-on {
+      width: 350px;
+      display: inline;
+    }
+    .frame-hover-off {
+      width: 350px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <a id="framesize-question" style="margin: 0 5px; background: #E2E2E5; width: 15px; height: 15px; border-radius: 50%;  font-size: 11px;  font-weight: bolder;  color: #666666;  display: flex;  justify-content: center;  align-items: center;  line-height: 15px; cursor: pointer"> ? </a>
+  <img id="framesize-info"class="frame-hover-off" src="/img/frame-hover.png" alt="">
+<script>
+  var frameBtn = document.getElementById("framesize-question");
+var frameHover = document.getElementById("framesize-info");
+
+frameBtn.addEventListener("click", openInfo);
+function openInfo() {
+  frameHover.classList.toggle("frame-hover-off")
+}
+</script>
+</body>
+</html>
