@@ -8,6 +8,9 @@
     .frame-hover-on {
       width: 350px;
       display: inline;
+      position: absolute;
+      top:258px;
+      left:165px;
     }
     .frame-hover-off {
       width: 350px;
@@ -21,7 +24,7 @@
   <img id="framesize-info"class="frame-hover-off" src="/img/frame-hover.png" alt="">
 <script>
   var frameBtn = document.getElementById("framesize-question");
-var frameHover = document.getElementById("framesize-info");
+  var frameHover = document.getElementById("framesize-info");
 
 frameBtn.addEventListener("click", openInfo);
 function openInfo() {
